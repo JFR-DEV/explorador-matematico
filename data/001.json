@@ -1,0 +1,158 @@
+{
+  "id": "001",
+  "title": "Una geometría, muchas formas de leerla",
+  "formalTitle": "Conjetura de racionalidad de Milne y especialización algebraica",
+  "subtitle": "¿Pueden distintos métodos reconocer la misma fracción?",
+  "area": "Teoría de números",
+  "date": "2026-10-08",
+  "sourceCommit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "scope": "Solo familia 001. El 032 se documenta como dependencia de una consecuencia; no se desarrolla.",
+  "sections": [
+    {
+      "id": "pregunta",
+      "title": "¿Puede una misma geometría hablar varios idiomas?",
+      "kicker": "01 · La pregunta que engancha",
+      "html": "\n<p>Imagina que una figura puede estudiarse con varios instrumentos. Cada instrumento describe la figura de una manera distinta. Te gustaría saber si, al preguntarles por una misma relación geométrica, todos terminan respondiendo con el mismo número. Esa es una puerta de entrada al problema de Milne.</p>\n<p>Pero hay un giro: al pasar la geometría a un sistema aritmético distinto pueden aparecer relaciones nuevas. Ya no basta con traducir las que conocías antes. Debes justificar qué ocurre con esas relaciones recién aparecidas.</p>\n<div class=\"callout\"><strong>La pregunta del 001, en palabras sencillas</strong><p>Cuando cierta información geométrica especial pasa a una buena reducción, ¿su emparejamiento con productos de divisores da siempre un número racional que coincide en todos los métodos de cohomología considerados?</p></div>\n<p>Un <strong>número racional</strong> es uno que puede escribirse como fracción de enteros: 3, −2 y 7/5 lo son. El problema no busca un número único para todas las figuras. Busca que, <em>para cada conjunto de datos fijo</em>, los diferentes métodos reconozcan una misma fracción.</p>\n<p>No estamos ante una cuenta pendiente del tipo «¿cuánto es x?». Estamos ante una afirmación universal: debe funcionar para todas las variedades y clases que cumplen las condiciones del enunciado.</p>\n<div class=\"analogy\"><strong>Alcance de la imagen de los idiomas</strong><p>Sirve para pensar en distintas representaciones de una información común. La cohomología no es una traducción de palabras: tiene espacios, productos y mapas propios. La analogía no establece que esos métodos deban coincidir.</p></div>\n<p class=\"source-note\"><a class=\"cite\" href=\"https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/00_intro.tex\" target=\"_blank\" rel=\"noopener\">001 · Introducción y teorema principal</a></p>"
+    },
+    {
+      "id": "conceptos",
+      "title": "Cinco ideas para entrar sin perderte",
+      "kicker": "02 · Antes de empezar",
+      "html": "\n<p>No necesitas dominar estos temas para seguir la aventura. Sí necesitamos acordar unas pocas palabras. Puedes abrir las definiciones completas en el glosario.</p>\n<div class=\"concept-grid\">\n<article><span>1</span><h3>Una geometría definida por ecuaciones</h3><p>Una <strong>variedad algebraica</strong> es, de manera introductoria, un objeto geométrico descrito por ecuaciones polinómicas. El manuscrito trabaja con variedades <strong>abelianas</strong>: tienen una operación de suma compatible con la geometría y son suaves y proyectivas. Las curvas elípticas son ejemplos de dimensión uno.</p></article>\n<article><span>2</span><h3>Pasar a otro mundo aritmético</h3><p>En característica p, sumar 1 exactamente p veces produce 0. Reducir módulo un primo es un ejemplo elemental de ese cambio. Una <strong>buena reducción</strong> conserva una variedad abeliana suave en la fibra reducida. Conservar suavidad no obliga a conservar todas las relaciones: pueden surgir divisores nuevos.</p></article>\n<article><span>3</span><h3>La huella y el objeto</h3><p>La <strong>cohomología</strong> asigna información algebraica a la geometría. Un ciclo algebraico deja una huella llamada clase. Una <strong>clase de Hodge</strong> satisface una condición especial dentro de esa información. Que una huella tenga esa condición no demuestra por sí solo que provenga de un ciclo algebraico.</p></article>\n<article><span>4</span><h3>Las piezas que probamos</h3><p>Un <strong>divisor</strong> es una combinación formal de subvariedades de codimensión uno. Productos de sus clases forman las clases de Lefschetz utilizadas aquí. «Complementario» significa que las codimensiones se completan hasta la dimensión total, permitiendo aplicar una traza y obtener un número.</p></article>\n<article><span>5</span><h3>Varios métodos de lectura</h3><p>El manuscrito compara cohomologías ℓ-ádicas para ℓ distinto de p y cohomología cristalina en p. No son simplemente calculadoras con distinta base numérica. Son construcciones matemáticas que permiten estudiar geometría en estos contextos aritméticos.</p></article></div>\n<h3>Un ejemplo geométrico que sí conocemos</h3>\n<p>Dos rectas distintas en el plano proyectivo se encuentran en un punto. Contar intersecciones correctamente requiere multiplicidades y, en situaciones generales, un marco adecuado. Cuando partimos de ciclos algebraicos y usamos teorías compatibles con sus clases, sus grados de intersección ofrecen una referencia común. Milne pregunta qué sucede cuando solo sabemos que la clase inicial es de Hodge.</p>\n<p>La dificultad está en ese <strong>«solo sabemos»</strong>. No podemos sustituir silenciosamente una clase de Hodge por un objeto algebraico ya construido: eso adelantaría precisamente parte de lo que falta justificar.</p>\n<p class=\"source-note\"><a class=\"cite\" href=\"https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/00_intro.tex\" target=\"_blank\" rel=\"noopener\">001 · Introducción y teorema principal</a> · <a class=\"cite\" href=\"https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/01_preliminaries.tex\" target=\"_blank\" rel=\"noopener\">001 · Comparaciones y clases de Lefschetz</a></p>"
+    },
+    {
+      "id": "historia",
+      "title": "Un desafío que se fue afinando",
+      "kicker": "03 · La historia del problema",
+      "html": "\n<p>La conjetura no apareció aislada. Nació de la búsqueda de conexiones fiables entre geometría en característica cero, geometría sobre cuerpos finitos y diferentes maneras de extraer información de ambas.</p>\n<div id=\"timeline\" class=\"timeline\"></div>\n<h3>¿Qué estaba resuelto antes de esta propuesta?</h3>\n<p>Había avances sustanciales. Deligne estableció que las clases de Hodge de variedades abelianas son absolutamente Hodge. Eso proporciona compatibilidades importantes, pero no convierte automáticamente en racional un emparejamiento con un divisor nuevo de la reducción. El manuscrito utiliza también comparaciones p-ádicas y teoría de clases de Lefschetz.</p>\n<p>Milne documentó un caso positivo: variedades CM cuya reducción es <strong>simple y ordinaria</strong>, y sus potencias. Allí las clases de Lefschetz pueden levantarse y la racionalidad se obtiene por esa vía. El desafío general incluye reducciones donde ese argumento no basta.</p>\n<div class=\"callout\"><strong>El antes y el después alegado</strong><p>Antes: casos positivos y criterios condicionales. Propuesta del 001: cubrir todas las variedades abelianas sobre la clausura algebraica de los racionales con buena reducción, para todo primo, incluido 2. Esta comparación describe el alcance anunciado, no una certificación de su prueba.</p></div>\n<p class=\"source-note\"><a class=\"cite\" href=\"https://www.jmilne.org/math/articles/2009b.pdf\" target=\"_blank\" rel=\"noopener\">J. S. Milne · Rational Tate classes (2009)</a> · <a class=\"cite\" href=\"https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/00_intro.tex\" target=\"_blank\" rel=\"noopener\">001 · Introducción y teorema principal</a></p>"
+    },
+    {
+      "id": "laboratorio",
+      "title": "Cambia las reglas y observa",
+      "kicker": "04 · Tu pequeño laboratorio",
+      "html": "\n<p>Primero vamos a tocar una idea real y mucho más sencilla: <strong>al cambiar el mundo aritmético, pueden cambiar las relaciones</strong>. Usa el número n y un primo p. El laboratorio mostrará cuánto queda al repartir n en grupos de tamaño p.</p>\n<div id=\"mod-lab\"></div>\n<p>En aritmética módulo p, dos enteros se consideran iguales si su diferencia es múltiplo de p. Por ejemplo, 7 y 2 son distintos como enteros, pero representan la misma clase módulo 5. También 5 y 0 representan la misma clase módulo 5. La información original puede perderse al pasar a la reducción.</p>\n<p><strong>Haz una predicción:</strong> si sumas p a n, ¿cambiará la posición final? Compruébalo con el botón del laboratorio. Después cambia p: la relación que parecía idéntica puede dejar de serlo.</p>\n<div class=\"analogy\"><strong>Lo que este laboratorio enseña —y lo que no</strong><p>Es una demostración exacta de aritmética modular para enteros pequeños. Ilustra el cambio de característica. No calcula clases de Hodge, no simula cohomología cristalina y no prueba la conjetura de Milne. Además, el resultado del 001 no dice que dos primos de reducción distintos deban producir el mismo número: fija el primo y el lugar de reducción.</p></div>\n<h3>Otra idea: recuperar una fracción común</h3>\n<p>El manuscrito necesita que ciertos factores de escala locales coincidan en <strong>un número racional común</strong>. Los normaliza mediante un cociente de grados de intersecciones de divisores. En el segundo control puedes variar dos enteros y ver la fracción exacta resultante. Un decimal redondeado no reemplaza esa fracción.</p>\n<div id=\"ratio-lab\"></div>\n<p>Este segundo modelo es una ilustración de una operación de la estrategia: obtener un cociente racional a partir de datos racionales. Los controles no representan grados de intersección de una variedad concreta ni comprueban que las hipótesis geométricas se satisfagan.</p>\n<p class=\"source-note\"><a class=\"cite\" href=\"https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/02_transport.tex\" target=\"_blank\" rel=\"noopener\">001 · Transporte mediante modelos integrales</a></p>"
+    },
+    {
+      "id": "propuesta",
+      "title": "Qué afirma exactamente OpenAI",
+      "kicker": "05 · La propuesta de solución",
+      "html": "\n<p>El teorema principal parte de una variedad abeliana A de dimensión d sobre la clausura algebraica de los racionales, con buena reducción A₀ en un lugar fijado sobre un primo p. Toma una clase racional de Hodge γ de codimensión r y d − r divisores en A₀.</p>\n<div class=\"formula\" role=\"img\" aria-label=\"La traza de la clase especializada gamma multiplicada por las clases de los divisores es el mismo número racional q en cada realización\">Tr(γ₀ · D₁ · … · D<sub>d−r</sub>) = q ∈ ℚ</div>\n<p>La fórmula es una abreviación: los D representan sus clases cohomológicas y la traza está normalizada. La propuesta dice que <strong>existe una misma fracción q</strong> en todas las realizaciones ℓ-ádicas con ℓ ≠ p y en la realización cristalina correspondiente. Los datos permanecen fijos durante la comparación.</p>\n<h3>Dos conclusiones que no debemos mezclar</h3>\n<ul><li><strong>Racionalidad:</strong> los emparejamientos considerados producen un número racional común. El manuscrito presenta una prueba que no usa el resultado 032.</li><li><strong>Representación algebraica después de reducir:</strong> una misma clase especializada sería representada por un ciclo algebraico racional en todas esas realizaciones. Esta consecuencia agrega el resultado 032 sobre variedades CM.</li></ul>\n<p>El texto no afirma que el ciclo pueda levantarse a la variedad original. Tampoco afirma que ese ciclo sea único como ciclo módulo equivalencia racional. Y no resuelve por esa consecuencia la conjetura de Hodge para todas las variedades abelianas en característica cero.</p>\n<details class=\"technical\"><summary>Ir más lejos: cuatro condiciones que importan</summary><p>1. La clase γ debe ser racional y de Hodge. 2. Se requiere buena reducción en el lugar elegido. 3. Se comparan productos de divisores de codimensión complementaria. 4. La componente cristalina se compara después de la extensión de coeficientes especificada por el manuscrito. Los casos r = 0 y r = d se deducen directamente de grados y clases superiores; el trabajo sustancial está en las codimensiones intermedias.</p></details>\n<p class=\"source-note\"><a class=\"cite\" href=\"https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/00_intro.tex\" target=\"_blank\" rel=\"noopener\">001 · Introducción y teorema principal</a> · <a class=\"cite\" href=\"https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/05_reduction.tex\" target=\"_blank\" rel=\"noopener\">001 · Ensamblaje y consecuencias</a></p>"
+    },
+    {
+      "id": "argumento",
+      "title": "La ruta de la demostración propuesta",
+      "kicker": "06 · Un mapa para seguir el argumento",
+      "html": "\n<p>Una demostración larga se entiende mejor si distinguimos sus tareas. Este mapa reconstruye la organización del manuscrito: no valida por sí solo los pasos. Pulsa cada estación para conocer su función y el punto que requeriría revisión.</p>\n<div id=\"proof-map\"></div>\n<h3>La idea que une la ruta</h3>\n<p>El texto intenta transportar la clase a objetos auxiliares donde sea más manejable. Primero utiliza una variedad con multiplicación compleja, CM. Después descompone el problema en clases especiales de Weil equilibradas. Para esas clases propone una alternativa: sus emparejamientos son todos cero, o pueden expresarse mediante divisores racionales después de la reducción.</p>\n<p>En el segundo caso, construye una filtración compatible con una estructura adicional y la realiza en otro objeto auxiliar. Eso permite levantar ciertos mapas y un divisor y extraer una identidad con coeficientes racionales. Finalmente devuelve la información a la variedad reducida inicial.</p>\n<p><strong>Hay dos objetos auxiliares distintos.</strong> El primero es CM; el segundo realiza la filtración elegida y puede no ser CM. El transporte se realiza por mapas entre fibras reducidas. Dibujar una flecha entre las variedades originales en característica cero sería añadir una afirmación que el texto no hace.</p>\n<div class=\"callout\"><strong>Una operación decisiva</strong><p>El transporte inicialmente puede introducir factores de escala. El manuscrito compara intersecciones racionales de divisores para obtener un único factor racional, compartido por las realizaciones. De lo contrario, tener una igualdad distinta en cada método no daría necesariamente la igualdad racional común buscada.</p></div>\n<details class=\"technical\"><summary>Ir más lejos: dónde mirar si queremos auditar</summary><ol><li><strong>§2:</strong> compatibilidades, traza normalizada y preservación de la propiedad bajo pullback racional.</li><li><strong>§3:</strong> hipótesis de los modelos integrales, realización de una filtración prescrita y normalización del transporte, también para p = 2.</li><li><strong>§4:</strong> construcción de una filtración débilmente admisible con restricciones; atención a que los polinomios se consideran sobre un cuerpo de coeficientes fijo.</li><li><strong>§5:</strong> dicotomía de Weil y paso de una identidad de Betti a todas las realizaciones.</li><li><strong>§6:</strong> reducción CM, ensamblaje del teorema y separación de la consecuencia que agrega el 032.</li></ol><p>Reconocer estas obligaciones es una lectura estructural. Comprobar que todas se cumplen exigiría contrastar los lemas y los teoremas externos en su alcance exacto.</p></details>\n<p class=\"source-note\"><a class=\"cite\" href=\"https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/02_transport.tex\" target=\"_blank\" rel=\"noopener\">001 · Transporte mediante modelos integrales</a> · <a class=\"cite\" href=\"https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/03_filtration.tex\" target=\"_blank\" rel=\"noopener\">001 · Construcción de una filtración</a> · <a class=\"cite\" href=\"https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/04_weil.tex\" target=\"_blank\" rel=\"noopener\">001 · Clases de Weil equilibradas</a> · <a class=\"cite\" href=\"https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/05_reduction.tex\" target=\"_blank\" rel=\"noopener\">001 · Ensamblaje y consecuencias</a></p>"
+    },
+    {
+      "id": "evidencia",
+      "title": "Abrimos la lupa, sin adelantar el veredicto",
+      "kicker": "07 · Respaldo y límites",
+      "html": "\n<div class=\"evidence-grid\">\n<article><span class=\"badge\">Afirmación del autor</span><h3>Una prueba escrita y accesible</h3><p>La versión fechada el 7 de octubre de 2026 contiene un enunciado, construcciones auxiliares, pruebas y bibliografía. Hemos leído su texto fuente completo. Eso permite explicar su arquitectura; no equivale a verificar cada inferencia.</p></article>\n<article><span class=\"badge\">Reacción independiente</span><h3>Una nota del propio Milne</h3><p>En su página de artículos, Milne añadió el 7 de octubre una nota que comenta favorablemente el anuncio de racionalidad y su uso de la teoría de Shimura y de trabajos de Kisin y Zhou. La página no describe una comprobación completa de cada paso. No la convertimos en un certificado de revisión por pares.</p></article>\n<article><span class=\"badge\">Formalización</span><h3>El 001 no se identificó en el catálogo consultado</h3><p>No encontramos una entrada por Milne o por el título del 001 en formalization.yaml de la versión estudiada. No ejecutamos Lean ni una comprobación formal de este capítulo. Esa búsqueda acotada no demuestra que no exista algún material fuera del catálogo.</p></article>\n<article><span class=\"badge\">Conclusión provisional</span><h3>Propuesta documentada; validez no certificada aquí</h3><p>Podemos seguir la estrategia y contrastarla con antecedentes. La revisión realizada no alcanza para declarar verificado el teorema. Tampoco encontramos, en la búsqueda acotada realizada, una refutación técnica del 001 que podamos documentar.</p></article></div>\n<h3>¿Qué revisión hemos hecho realmente?</h3>\n<p>Leímos introducción, comparaciones, transporte, filtración, clases de Weil, ensamblaje y bibliografía. Contrastamos la formulación histórica y los casos anteriores con fuentes de Milne. Identificamos condiciones y dependencias. Buscamos reacciones externas y revisamos el catálogo de formalización. <strong>No reconstruimos todas las pruebas externas citadas ni auditamos todos los lemas.</strong></p>\n<p>La búsqueda de revisión independiente usó el título y combinaciones de «Milne», «rationality conjecture» y «OpenAI». Su fecha de corte es el 8 de octubre de 2026, hora de Buenos Aires. Lo publicado después puede cambiar la evaluación.</p>\n<h3>Qué podría cambiar esta conclusión</h3>\n<ul><li>Una revisión detallada, firmada y con localizadores de los pasos examinados.</li><li>Una corrección u objeción concreta al enunciado o a un lema, con respuesta documentada.</li><li>Una formalización cuyo enunciado y supuestos coincidan con el teorema principal y cuya comprobación podamos reproducir.</li></ul>\n<p>La existencia de un archivo Lean no basta: hay que mirar qué afirma, qué asume y qué parte del manuscrito representa. La propia guía de OpenAI distingue comprobaciones principales de comprobaciones auxiliares.</p>\n<p class=\"source-note\"><a class=\"cite\" href=\"https://www.jmilne.org/math/articles/abstracts.html\" target=\"_blank\" rel=\"noopener\">J. S. Milne · Nota pública añadida el 7 de octubre de 2026</a> · <a class=\"cite\" href=\"https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/formalization.yaml\" target=\"_blank\" rel=\"noopener\">Catálogo de formalizaciones, versión estudiada</a> · <a class=\"cite\" href=\"https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/README.md\" target=\"_blank\" rel=\"noopener\">Guía Comparator de OpenAI</a></p>"
+    },
+    {
+      "id": "aplicaciones",
+      "title": "Por qué importa, aunque no sea una herramienta cotidiana",
+      "kicker": "08 · Conexiones y aplicaciones",
+      "html": "\n<p><strong>Su aplicación documentada es interna a las matemáticas.</strong> El problema ayuda a conectar clases en característica cero con clases racionales en característica positiva. Es una pieza de la construcción de teorías de motivos abelianos y del estudio de variedades de Shimura.</p>\n<p>Una manera introductoria de imaginar un motivo es como un marco que organiza información geométrica compartida por distintas cohomologías. No es un archivo universal de una figura: esa imagen solo ayuda a entender por qué interesa que las realizaciones encajen.</p>\n<p>En el trabajo de Milne de 2000, la compatibilidad de estructuras racionales aparece vinculada a una descripción canónica de puntos de ciertas variedades de Shimura. En 2025 estudia una teoría de motivos más débil que la basada en todas las grandes conjeturas, pero con muchas de sus consecuencias. Por eso este resultado tendría valor como pieza de una arquitectura teórica.</p>\n<p><strong>Conexiones:</strong> Hodge, Tate, ciclos algebraicos y teoría de números. Las variedades abelianas también aparecen en otros campos, pero de ello no se deduce que esta prueba mejore directamente una tecnología concreta.</p>\n<div class=\"callout\"><strong>¿Una aplicación tecnológica inmediata?</strong><p>No identificamos una aplicación directa documentada de este manuscrito a cifrado, medicina, planificación urbana u otro uso cotidiano. Presentarlo como una mejora automática para esos ámbitos sería una extrapolación. Su interés demostrado por las fuentes consultadas está en las conexiones matemáticas.</p></div>\n<p class=\"source-note\"><a class=\"cite\" href=\"https://www.jmilne.org/math/articles/2000.pdf\" target=\"_blank\" rel=\"noopener\">J. S. Milne · Towards a proof… (2000)</a> · <a class=\"cite\" href=\"https://www.jmilne.org/math/articles/SVp.pdf\" target=\"_blank\" rel=\"noopener\">J. S. Milne · Abelian motives and Shimura varieties… (2025)</a></p>"
+    },
+    {
+      "id": "retos",
+      "title": "Tres retos para cerrar la aventura",
+      "kicker": "09 · Lo que te llevas",
+      "html": "\n<p>Hoy no necesitabas aprender todas las herramientas de geometría algebraica. La meta era reconocer una pregunta y sus condiciones, seguir una estrategia y distinguir el alcance de sus pruebas.</p>\n<div id=\"quiz\"></div>\n<div class=\"takeaway\"><h3>Tu resumen en tres frases</h3><ol><li>Milne pregunta por un número racional común en emparejamientos de clases especializadas y divisores.</li><li>OpenAI propone transportes a objetos auxiliares y una reducción a clases de Weil para demostrarlo.</li><li>La representación por un ciclo algebraico después de reducir necesita una entrada adicional; la revisión de esta biblioteca no certifica la validez de toda la propuesta.</li></ol></div>\n<h3>Para nuestra próxima conversación</h3>\n<p>Prueba a contarme, con tus palabras: <em>«¿Qué cambia al reducir una geometría? ¿Qué promete que permanezca compatible el 001? ¿Qué evidencia me haría confiar más en la demostración?»</em> Si alguna idea no encaja, volveremos a ella con otro ejemplo antes de pasar al 002.</p>\n<p><a href=\"#/glosario\">Revisar el glosario →</a> · <a href=\"#/fuentes\">Abrir las fuentes →</a></p>"
+    }
+  ],
+  "timeline": [
+    {
+      "year": "1982",
+      "title": "Clases absolutamente Hodge",
+      "text": "Deligne proporciona un antecedente de compatibilidad para clases de Hodge de variedades abelianas. No es todavía la racionalidad con nuevos divisores reducidos.",
+      "source": "deligne"
+    },
+    {
+      "year": "2000",
+      "title": "La compatibilidad como conjetura",
+      "text": "Milne formula una versión débil en la conjetura 6.1(A), ligada a su trabajo sobre Langlands y Rapoport.",
+      "source": "milne2000"
+    },
+    {
+      "year": "2007–09",
+      "title": "La pregunta toma su forma de emparejamiento",
+      "text": "Notas del taller AIM y Rational Tate classes. Se documentan casos positivos y la equivalencia con una buena teoría de clases racionales de Tate.",
+      "source": "milne2009"
+    },
+    {
+      "year": "2025",
+      "title": "Una estrategia todavía condicional",
+      "text": "La pregunta 2.17 propone levantar clases de Lefschetz en determinados datos CM; el teorema 2.18 explica qué permitiría obtener.",
+      "source": "milne2025"
+    },
+    {
+      "year": "7 oct 2026",
+      "title": "Propuesta y reacción",
+      "text": "Fecha del manuscrito del 001 y de la nota de Milne que comenta el anuncio. La reacción y la verificación completa son evidencias distintas.",
+      "source": "reaccion"
+    }
+  ],
+  "proof": [
+    {
+      "title": "Transportar a una variedad CM",
+      "text": "La propuesta lleva la clase especializada a una clase auxiliar mediante una quasi-isogenia entre fibras reducidas, tras tomar una potencia. Una normalización racional busca que el transporte sea común a todos los métodos.",
+      "audit": "Revisar las hipótesis de los modelos integrales y la preservación simultánea de tensores; comprobar el factor racional común.",
+      "source": "transporte"
+    },
+    {
+      "title": "Descomponer en clases de Weil",
+      "text": "Expresa clases CM como sumas de pullbacks de clases de Weil equilibradas, con coeficientes racionales y buena reducción conservada.",
+      "audit": "Comprobar la construcción de factores mediante idempotentes y el descenso de la suma al espacio racional.",
+      "source": "final"
+    },
+    {
+      "title": "Separar dos alternativas",
+      "text": "Sin un endomorfismo invertible de la clase especificada, los emparejamientos se anulan. Con él, la propuesta construye una filtración compatible y levanta un divisor para obtener una identidad racional.",
+      "audit": "Revisar la dicotomía, la admisibilidad de la filtración y su realización en un objeto auxiliar distinto del CM.",
+      "source": "weil"
+    },
+    {
+      "title": "Regresar y obtener la fracción común",
+      "text": "La identidad se especializa en todas las realizaciones. Pullback y combinaciones racionales devuelven la propiedad a la clase inicial.",
+      "audit": "Verificar compatibilidad de trazas, productos, especialización y mapas racionales; mantener fijo el lugar de reducción.",
+      "source": "final"
+    }
+  ],
+  "quizzes": [
+    {
+      "question": "Si el laboratorio muestra 7 ≡ 2 módulo 5, ¿hemos probado el teorema de Milne?",
+      "answers": [
+        "Sí: basta con comprobar una cuenta.",
+        "No: vimos aritmética modular, no clases de Hodge."
+      ],
+      "correct": 1,
+      "hint": "Compara qué objetos estudia el laboratorio con los objetos del enunciado.",
+      "explanation": "El laboratorio verifica una cuenta exacta. La conjetura trata familias geométricas, clases especiales y varios métodos de cohomología. Un ejemplo no prueba su afirmación universal."
+    },
+    {
+      "question": "¿Qué necesita, según el manuscrito, la consecuencia que representa la clase por un ciclo algebraico?",
+      "answers": [
+        "Solo que el resultado sea una fracción.",
+        "El transporte del 001 y el resultado adicional 032.",
+        "Que dos decimales parezcan iguales."
+      ],
+      "correct": 1,
+      "hint": "Vuelve a las dos conclusiones de «La propuesta».",
+      "explanation": "La racionalidad del emparejamiento y la existencia de un representante algebraico son afirmaciones distintas. El manuscrito añade el teorema de Hodge para variedades CM, asociado al 032, para la segunda."
+    },
+    {
+      "question": "¿Qué evidencia tenemos en esta biblioteca para declarar la prueba completamente verificada?",
+      "answers": [
+        "La nota pública de Milne ya basta.",
+        "La lectura completa del texto ya basta.",
+        "Todavía no tenemos una certificación completa."
+      ],
+      "correct": 2,
+      "hint": "Distingue leer, comentar favorablemente y comprobar cada paso.",
+      "explanation": "La lectura estructural, los antecedentes y la reacción pública son información útil. Aquí no se reprodujo una verificación formal ni se contrastó técnicamente cada inferencia de la prueba."
+    }
+  ]
+}

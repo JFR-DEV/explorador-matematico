@@ -1,0 +1,98 @@
+[
+  {
+    "term": "Número racional",
+    "definition": "Un número que puede escribirse como una fracción de dos enteros, con denominador distinto de cero. Por ejemplo, 3/4 o −2 (= −2/1). Una fracción puede tener una expansión decimal interminable, como 1/3.",
+    "limit": "La palabra «racionalidad» del 001 se refiere a valores en ℚ; no a que un argumento sea razonable.",
+    "source": "milne2009"
+  },
+  {
+    "term": "Cuerpo",
+    "definition": "Un sistema donde puedes sumar, restar, multiplicar y dividir por cualquier elemento no nulo, siguiendo reglas coherentes. Los racionales forman un cuerpo. Los residuos módulo un primo también.",
+    "limit": "Los residuos módulo 4 no forman un cuerpo: 2 no tiene inverso. Nuestro laboratorio usa módulos primos.",
+    "source": "comparaciones"
+  },
+  {
+    "term": "Característica",
+    "definition": "Una manera de distinguir mundos aritméticos. En característica cero, sumar 1 consigo mismo nunca da 0. En característica p, después de p sumas llegas a 0.",
+    "limit": "El reloj del laboratorio ilustra esta regla aritmética; no modela toda la geometría del manuscrito.",
+    "source": "comparaciones"
+  },
+  {
+    "term": "Variedad algebraica",
+    "definition": "Un objeto geométrico descrito mediante ecuaciones polinómicas. Una circunferencia dada por x²+y²=1 es una primera imagen útil.",
+    "limit": "Las variedades del artículo tienen estructuras que una circunferencia real no representa.",
+    "source": "intro"
+  },
+  {
+    "term": "Variedad abeliana",
+    "definition": "Una variedad algebraica completa que además permite combinar sus puntos con una operación de grupo conmutativa. Las curvas elípticas son el primer caso importante.",
+    "limit": "«Abeliana» no significa que sea una figura plana o fácil de dibujar.",
+    "source": "intro"
+  },
+  {
+    "term": "Buena reducción",
+    "definition": "Situación en que un objeto definido en característica cero puede reducirse en un lugar sobre un primo p y dar una variedad abeliana sin perder esa estructura.",
+    "limit": "No garantiza que todas sus clases geométricas se conserven ni que todos los nuevos divisores puedan levantarse.",
+    "source": "intro"
+  },
+  {
+    "term": "Cohomología",
+    "definition": "Una familia de herramientas que asocia datos algebraicos a la geometría. El artículo compara distintas realizaciones, entre ellas la étale y la cristalina.",
+    "limit": "La metáfora de distintos instrumentos ayuda, pero estos instrumentos no son mediciones físicas.",
+    "source": "comparaciones"
+  },
+  {
+    "term": "Clase de Hodge",
+    "definition": "Un dato de la cohomología que satisface determinadas condiciones de tipo y racionalidad en la geometría compleja. En este manuscrito se parte de clases racionales de Hodge.",
+    "limit": "Tener una clase de Hodge no proporciona automáticamente un ciclo algebraico que la produzca.",
+    "source": "intro"
+  },
+  {
+    "term": "Ciclo algebraico",
+    "definition": "Una combinación formal de subvariedades, con coeficientes. Podemos pasar de un ciclo a su clase cohomológica.",
+    "limit": "Reconstruir un ciclo a partir de una clase es un problema distinto; el ciclo tampoco tiene por qué ser único.",
+    "source": "final"
+  },
+  {
+    "term": "Divisor y clase de Lefschetz",
+    "definition": "Un divisor es un ciclo de codimensión uno. En el artículo, las clases de Lefschetz se construyen con productos y combinaciones racionales de clases de divisores.",
+    "limit": "No todas las clases de Hodge son productos de divisores.",
+    "source": "comparaciones"
+  },
+  {
+    "term": "Traza o emparejamiento",
+    "definition": "Un procedimiento que convierte un producto de clases de grado apropiado en un número. La conjetura pregunta por la racionalidad y compatibilidad de ciertos números así obtenidos.",
+    "limit": "No se trata de contar puntos ni de tomar una «huella» visual de una figura.",
+    "source": "intro"
+  },
+  {
+    "term": "Especialización",
+    "definition": "Paso que lleva datos de la variedad original a datos de su reducción. El artículo estudia cómo se comportan las clases en ese paso.",
+    "limit": "El teorema de racionalidad y su consecuencia de especialización algebraica tienen requisitos diferentes.",
+    "source": "final"
+  },
+  {
+    "term": "Tipo CM",
+    "definition": "Una condición que proporciona muchas simetrías algebraicas —endomorfismos— y permite organizar ciertos argumentos.",
+    "limit": "Se utiliza una variedad auxiliar CM; otra auxiliar local no tiene por qué ser CM.",
+    "source": "transporte"
+  },
+  {
+    "term": "Clase de Weil equilibrada",
+    "definition": "Un tipo especial de clase de Hodge en variedades con acción de un cuerpo CM, sujeto a una condición de equilibrio. El argumento reduce a estudiar estas clases.",
+    "limit": "No basta con mirar una balanza: el equilibrio es una condición algebraica precisa.",
+    "source": "weil"
+  },
+  {
+    "term": "Isogenia",
+    "definition": "Una aplicación entre variedades abelianas que respeta el grupo, es sobreyectiva y tiene núcleo finito. Permite comparar objetos «salvo una diferencia finita».",
+    "limit": "No es necesariamente una igualdad ni un isomorfismo.",
+    "source": "transporte"
+  },
+  {
+    "term": "Conjetura y teorema",
+    "definition": "Una conjetura es una afirmación pendiente de demostración. Un teorema incluye una demostración bajo condiciones precisas; su aceptación requiere que ese argumento resista el examen.",
+    "limit": "El nombre «teorema» en un manuscrito expresa lo que sus autores afirman haber probado; nuestra ficha evalúa por separado su respaldo.",
+    "source": "manuscrito"
+  }
+]

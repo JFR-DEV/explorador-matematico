@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-08",
+  "version": "1.0",
+  "sourceCommit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "steps": [
+    [
+      "Fijar la versión",
+      "Registrar fecha, identificador, versión del repositorio y manuscritos de la familia. Enlazar las fuentes a esa versión."
+    ],
+    [
+      "Leer el material completo",
+      "Separar enunciado, hipótesis, resultados, pasos decisivos y referencias. Para el 001 se leyeron las seis secciones TeX y su bibliografía."
+    ],
+    [
+      "Reconstruir los antecedentes",
+      "Buscar publicaciones originales y textos de los autores. Diferenciar conocimiento anterior y reacciones posteriores."
+    ],
+    [
+      "Precisar lo que se afirma",
+      "¿Solución general, caso particular, mejora, contraejemplo o nueva prueba? Registrar dependencias y alcance."
+    ],
+    [
+      "Contrastar el respaldo",
+      "Buscar revisión independiente, correcciones, objeciones y formalización. Documentar el alcance; no equiparar una reacción favorable con una auditoría."
+    ],
+    [
+      "Crear una experiencia",
+      "Explicar desde cero los conceptos necesarios. Diseñar ejemplos, diagramas y experimentos, indicando dónde termina cada analogía."
+    ],
+    [
+      "Revisar y publicar",
+      "Comprobar fuentes, navegación, interacciones y accesibilidad. Conservar preguntas pendientes y un registro de correcciones."
+    ]
+  ],
+  "criteria": [
+    [
+      "Afirmación",
+      "Qué asegura el manuscrito, con qué hipótesis y referencias."
+    ],
+    [
+      "Revisión independiente",
+      "Quién revisó, cuándo y qué parte examinó. Una mención o un anuncio no equivale a revisar toda la prueba."
+    ],
+    [
+      "Formalización",
+      "Qué enunciado cubre, qué supuestos usa y si se ejecutó su comprobación. No extrapolar resultados auxiliares al principal."
+    ],
+    [
+      "Conclusión provisional",
+      "Qué podemos sostener con la evidencia disponible y qué queda pendiente."
+    ]
+  ],
+  "questions": [
+    "¿Existe una revisión técnica pública del 001 que examine sus pasos decisivos?",
+    "¿Hay una formalización identificable del enunciado principal, con sus hipótesis completas?",
+    "¿Qué evaluación independiente tiene el 032 para la consecuencia de especialización algebraica?",
+    "¿Qué vocabulario y actividades requieren ajustes después de recorrer juntos el piloto?"
+  ],
+  "search": "Búsqueda acotada hasta el 8 de octubre de 2026: «Milne rationality conjecture OpenAI», fuentes de J. S. Milne y catálogo Lean del repositorio. Encontramos la nota pública de Milne del 7 de octubre; no identificamos en esa búsqueda una auditoría técnica completa ni una refutación técnica específica. Esto no demuestra que no existan.",
+  "corrections": [
+    {
+      "date": "2026-10-08",
+      "text": "Primera edición. Se distingue el teorema de racionalidad de la consecuencia que usa el 032; se registran los saltos de numeración original. No hay correcciones posteriores registradas."
+    }
+  ]
+}

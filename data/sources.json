@@ -1,0 +1,110 @@
+[
+  {
+    "id": "manuscrito",
+    "title": "OpenAI · Manuscrito 001, 7 de octubre de 2026",
+    "url": "https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/paper.pdf",
+    "note": "Fuente de las afirmaciones de la propuesta. Se leyeron las seis secciones del texto fuente y su bibliografía; no se certificó cada demostración."
+  },
+  {
+    "id": "intro",
+    "title": "001 · Introducción y teorema principal",
+    "url": "https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/00_intro.tex",
+    "note": "Enunciado, condiciones, antecedentes y cuatro etapas del argumento."
+  },
+  {
+    "id": "comparaciones",
+    "title": "001 · Comparaciones y clases de Lefschetz",
+    "url": "https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/01_preliminaries.tex",
+    "note": "Convenciones de trazas, compatibilidad y criterio para levantar homomorfismos."
+  },
+  {
+    "id": "transporte",
+    "title": "001 · Transporte mediante modelos integrales",
+    "url": "https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/02_transport.tex",
+    "note": "Dos construcciones auxiliares y normalización racional común."
+  },
+  {
+    "id": "filtracion",
+    "title": "001 · Construcción de una filtración",
+    "url": "https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/03_filtration.tex",
+    "note": "Elección compatible con endomorfismos, polarización y admisibilidad."
+  },
+  {
+    "id": "weil",
+    "title": "001 · Clases de Weil equilibradas",
+    "url": "https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/04_weil.tex",
+    "note": "Dicotomía entre emparejamientos nulos e identidad racional en divisores."
+  },
+  {
+    "id": "final",
+    "title": "001 · Ensamblaje y consecuencias",
+    "url": "https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/sections/05_reduction.tex",
+    "note": "Distingue la prueba de racionalidad de la consecuencia que requiere el 032."
+  },
+  {
+    "id": "referencias",
+    "title": "001 · Bibliografía del manuscrito",
+    "url": "https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/build/references.tex",
+    "note": "Referencias originales y localizadores usados por OpenAI."
+  },
+  {
+    "id": "milne2000",
+    "title": "J. S. Milne · Towards a proof… (2000)",
+    "url": "https://www.jmilne.org/math/articles/2000.pdf",
+    "note": "Conjetura 6.1(A): antecedente de racionalidad débil. Texto de una charla de abril de 2000."
+  },
+  {
+    "id": "milne2007",
+    "title": "J. S. Milne · Notas del taller AIM (2007; versión de 2008)",
+    "url": "https://www.jmilne.org/math/articles/2007e.pdf",
+    "note": "Sección 10, pregunta 10.6 y proposición 10.7: estrategia de levantar conjuntamente clases y divisores."
+  },
+  {
+    "id": "milne2009",
+    "title": "J. S. Milne · Rational Tate classes (2009)",
+    "url": "https://www.jmilne.org/math/articles/2009b.pdf",
+    "note": "Conjetura 4.1, ejemplo 4.2 y teorema 4.5. Prepublicación iniciada en 2007; artículo publicado en 2009."
+  },
+  {
+    "id": "milne2025",
+    "title": "J. S. Milne · Abelian motives and Shimura varieties… (2025)",
+    "url": "https://www.jmilne.org/math/articles/SVp.pdf",
+    "note": "Versión 2.2: pregunta 2.17 y teorema 2.18. Puente entre racionalidad y motivos en característica positiva."
+  },
+  {
+    "id": "reaccion",
+    "title": "J. S. Milne · Nota pública añadida el 7 de octubre de 2026",
+    "url": "https://www.jmilne.org/math/articles/abstracts.html",
+    "note": "Entrada 2025: comenta el anuncio de racionalidad. Es una reacción positiva; la página no documenta una auditoría completa de la prueba."
+  },
+  {
+    "id": "deligne",
+    "title": "P. Deligne · Hodge cycles on abelian varieties (1982)",
+    "url": "https://www.jmilne.org/math/Documents/Deligne82.pdf",
+    "note": "Teorema 2.11: antecedente de clases absolutamente Hodge; referencia del manuscrito, no reproducción técnica nuestra."
+  },
+  {
+    "id": "lean",
+    "title": "Catálogo de formalizaciones, versión estudiada",
+    "url": "https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/formalization.yaml",
+    "note": "La búsqueda por título y Milne no identificó una entrada del 001. Esto no prueba ausencia de todo material formal fuera de ese catálogo."
+  },
+  {
+    "id": "comparator",
+    "title": "Guía Comparator de OpenAI",
+    "url": "https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/README.md",
+    "note": "Advierte que algunas comprobaciones verifican resultados auxiliares, no el teorema principal."
+  },
+  {
+    "id": "catalogo",
+    "title": "Catálogo original de 372 familias",
+    "url": "https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/CONTENTS.md",
+    "note": "719 enlaces a manuscritos. Identificadores con saltos: 045, 061, 070, 123 y 163 no aparecen en esta versión."
+  },
+  {
+    "id": "areas",
+    "title": "Organización por disciplinas",
+    "url": "https://github.com/JFR-DEV/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/overview.tex",
+    "note": "Áreas tomadas del panorama original; nombres de las disciplinas traducidos al español."
+  }
+]
