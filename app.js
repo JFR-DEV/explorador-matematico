@@ -3,6 +3,7 @@
 (() => {
 let db, mode="vista", page=1;
 const main=document.getElementById("contenido");
+document.querySelector(".skip").addEventListener("click",e=>{e.preventDefault();main.focus({preventScroll:true});main.scrollIntoView({block:"start"});});
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const norm=s=>String(s).normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 const source=id=>db.sources.find(s=>s.id===id);
@@ -24,7 +25,7 @@ function cards(){
  const q=norm(by("search").value.trim()),area=by("area").value,status=by("status").value;
  const entries=db.catalog.entries.filter(e=>(!q||norm(e.id+" "+e.title+" "+e.papers.map(p=>p.title).join(" ")+" "+(e.id==="001"?"Milne racionalidad especialización algebraica":"")).includes(q))&&(!area||e.area===area)&&(!status||e.status===status));
  const size=24,total=Math.max(1,Math.ceil(entries.length/size));page=Math.min(page,total);
- by("result-count").textContent=entries.length+" familias · "+entries.reduce((s,e)=>s+e.papers.length,0)+" manuscritos";
+ by("result-count").textContent=entries.length+" "+(entries.length===1?"familia":"familias")+" · "+entries.reduce((s,e)=>s+e.papers.length,0)+" "+(entries.reduce((s,e)=>s+e.papers.length,0)===1?"manuscrito":"manuscritos");
  by("catalog-cards").innerHTML=entries.length?entries.slice((page-1)*size,page*size).map(e=>'<article class="catalog-card"><div class="card-top"><span class="card-number">'+esc(e.id)+'</span><span class="badge '+(e.id==="001"?"ready":"")+'">'+esc(e.status)+'</span></div><h2>'+esc(e.title)+'</h2><p class="small">'+esc(e.area)+' · '+e.papers.length+' '+(e.papers.length===1?"manuscrito":"manuscritos")+'</p>'+(e.id==="001"?'<p><a class="btn" href="#/001">Explorar en español ↗</a></p>':"")+'<details><summary>Ver manuscritos del '+esc(e.id)+'</summary>'+(e.id!=="001"?'<p class="small" style="margin-top:15px">Capítulo educativo pendiente. Estos enlaces llevan al material original, cuyo respaldo aún no hemos estudiado aquí.</p>':"")+'<ul class="paper-list">'+e.papers.map(p=>'<li><a href="'+esc(p.url)+'" target="_blank" rel="noopener">'+esc(p.title)+' ↗</a></li>').join("")+'</ul></details></article>').join(""):'<p class="empty">No hay coincidencias. Prueba con otro título o cambia los filtros.</p>';
  by("pagination").innerHTML='<button id="prev" '+(page===1?"disabled":"")+'>← Anterior</button><span>Página '+page+' de '+total+'</span><button id="next" '+(page===total?"disabled":"")+'>Siguiente →</button>';
  [["prev",-1],["next",1]].forEach(([id,delta])=>by(id).addEventListener("click",()=>{page+=delta;cards();by("result-count").scrollIntoView({block:"center"});by(delta<0?"prev":"next").focus({preventScroll:true});}));
@@ -96,7 +97,7 @@ function route(){
  const [name,anchor]=(location.hash.replace(/^#\/?/,"")||"inicio").split("/");
  const routes={inicio:home,catalogo:catalog,"001":lesson,glosario:glossary,metodo:methodology,fuentes:sources};
  (routes[name]||home)();
- const titles={inicio:"Explorador matemático",catalogo:"Biblioteca", "001":"001 · Conjetura de racionalidad de Milne",glosario:"Glosario",metodo:"Cómo investigamos",fuentes:"Fuentes"};
+ const titles={inicio:"Inicio",catalogo:"Biblioteca", "001":"001 · Conjetura de racionalidad de Milne",glosario:"Glosario",metodo:"Cómo investigamos",fuentes:"Fuentes"};
  document.title=(titles[name]||titles.inicio)+" · Explorador matemático";
  document.querySelectorAll(".header-inner nav a").forEach(a=>{if(a.getAttribute("href")==="#/"+name)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current");});
  window.scrollTo(0,0);main.focus({preventScroll:true});
